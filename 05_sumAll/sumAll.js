@@ -6,7 +6,7 @@ const sumAll = function() {
         return "ERROR";
     }
     // Tests is both arguments are numbers
-    if (typeof(smallNumber) != typeof(1) || typeof(largeNumber) != typeof(1)) {
+    if (!Number.isInteger(smallNumber) || !Number.isInteger(largeNumber)) {
         return "ERROR";
     }
     // Tests if the arguments are in the correct order
